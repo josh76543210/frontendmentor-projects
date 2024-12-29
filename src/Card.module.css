@@ -1,0 +1,23 @@
+.card {
+  background-color: var(--link-bg);
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.links {
+  margin-top: -8px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.links a:first-of-type {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.links a:last-of-type {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}

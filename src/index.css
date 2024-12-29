@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --txt-color: rgba(255, 255, 255, 0.87);
+  --bg-color: #242424;
+  --light-primary: #747bff;
+  --primary: #646cff;
+  --dark-primary: #535bf2;
+  --link-bg: #1a1a1a;
+
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: var(--txt-color);
+  background-color: var(--bg-color);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: var(--primary);
+  text-decoration: inherit;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--link-bg);
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+a:hover {
+  border-color: var(--primary);
+  color: var(--dark-primary);
+}
+a:focus,
+a:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --txt-color: #213547;
+    --bg-color: #ffffff;
+    --link-bg: #f9f9f9;
+  }
+  a:hover {
+    color: var(--light-primary);
+  }
+}
