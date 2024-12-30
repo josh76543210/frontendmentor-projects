@@ -16,6 +16,10 @@
   object-fit: cover;
 }
 
+.notCenteredImg {
+  object-position: top center;
+}
+
 .links {
   margin-top: -8px;
   display: grid;

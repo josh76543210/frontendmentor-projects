@@ -5,8 +5,9 @@
     "title": "QR Code Component",
     "url": "https://josh76543210-fm-qr-code-component.netlify.app/",
     "repo": "https://github.com/josh76543210/Frontend-Mentor---QR-code-component",
-    "screenshot": "./assets/img/projects/qr-code-component.png",
-    "tools": []
+    "screenshot": "qr-code-component.png",
+    "tools": [],
+    "centeredImg": true
   },
   {
     "id": 2,
@@ -14,15 +15,308 @@
     "title": "Product Preview Card Component",
     "url": "https://josh76543210-fm-product-component.netlify.app/",
     "repo": "https://github.com/josh76543210/Frontend-Mentor---Product-preview-card-component",
-    "screenshot": "./assets/img/projects/product-preview-card-component.png",
-    "tools": []
+    "screenshot": "product-preview-card-component.png",
+    "tools": [],
+    "centeredImg": true
   },
   {
     "id": 3,
     "difficulty": 3,
-    "title": "Test",
-    "url": "https://josh76543210-fm-product-component.netlify.app/",
-    "screenshot": "./assets/img/projects/intro-section-with-dropdown-navigation.png",
-    "tools": []
+    "title": "NFT Preview Card Component",
+    "url": "https://josh76543210-fm-nft-component.netlify.app/",
+    "repo": "https://github.com/josh76543210/Frontend-Mentor---NFT-preview-card-component-solution",
+    "screenshot": "nft-preview-card-component.png",
+    "tools": [],
+    "centeredImg": true
+  },
+  {
+    "id": 4,
+    "difficulty": 4,
+    "title": "Results Summary Component",
+    "url": "https://josh76543210-fm-results-summary.netlify.app/",
+    "repo": "https://github.com/josh76543210/Frontend-Mentor---Results-summary-component-solution",
+    "screenshot": "results-summary-component.png",
+    "tools": [],
+    "centeredImg": true
+  },
+  {
+    "id": 5,
+    "difficulty": 5,
+    "title": "Order Summary Card",
+    "url": "https://josh76543210-fm-order-summary-card.netlify.app/",
+    "repo": "https://github.com/josh76543210/Frontend-Mentor---Order-summary-card-solution",
+    "screenshot": "order-summary-card.png",
+    "tools": [],
+    "centeredImg": true
+  },
+  {
+    "id": 6,
+    "difficulty": 6,
+    "title": "Stats Preview Card Component",
+    "url": "https://josh76543210-fm-stats-preview-card.netlify.app/",
+    "repo": "https://github.com/josh76543210/Frontend-Mentor---Stats-preview-card-component-solution",
+    "screenshot": "stats-preview-card-component.png",
+    "tools": [],
+    "centeredImg": true
+  },
+  {
+    "id": 7,
+    "difficulty": 7,
+    "title": "Profile Card Component",
+    "url": "https://josh76543210-fm-profile-card.netlify.app/",
+    "repo": "https://github.com/josh76543210/Frontend-Mentor---Profile-card-component-solution",
+    "screenshot": "profile-card-component.png",
+    "tools": [],
+    "centeredImg": true
+  },
+  {
+    "id": 8,
+    "difficulty": 8,
+    "title": "Three Column Preview Card Component",
+    "url": "https://josh76543210-fm-3-column-preview-card.netlify.app/",
+    "repo": "https://github.com/josh76543210/Frontend-Mentor---3-column-preview-card-component-solution",
+    "screenshot": "3-column-preview-card-component.png",
+    "tools": [],
+    "centeredImg": true
+  },
+  {
+    "id": 9,
+    "difficulty": 9,
+    "title": "Interactive Rating Component",
+    "url": "https://josh76543210-fm-interactive-rating.netlify.app/",
+    "repo": "https://github.com/josh76543210/Frontend-Mentor---Interactive-rating-component-solution",
+    "screenshot": "interactive-rating-component.png",
+    "tools": [],
+    "centeredImg": true
+  },
+  {
+    "id": 10,
+    "difficulty": 10,
+    "title": "FAQ Accordion Card",
+    "url": "https://josh76543210-fm-faq-accordion-card.netlify.app/",
+    "repo": "https://github.com/josh76543210/Frontend-Mentor---FAQ-accordion-card-solution",
+    "screenshot": "faq-accordion-card.png",
+    "tools": [],
+    "centeredImg": true
+  },
+  {
+    "id": 11,
+    "difficulty": 11,
+    "title": "Social Proof Section",
+    "url": "https://josh76543210-fm-social-proof-section.netlify.app/",
+    "repo": "https://github.com/josh76543210/Frontend-Mentor---Social-proof-section-solution",
+    "screenshot": "social-proof-section.png",
+    "tools": [],
+    "centeredImg": true
+  },
+  {
+    "id": 12,
+    "difficulty": 12,
+    "title": "Article Preview Component",
+    "url": "https://josh76543210-fm-article-preview.netlify.app/",
+    "repo": "https://github.com/josh76543210/Frontend-Mentor---Article-preview-component-solution",
+    "screenshot": "article-preview-component.png",
+    "tools": [],
+    "centeredImg": true
+  },
+  {
+    "id": 13,
+    "difficulty": 13,
+    "title": "Four Card Feature Section",
+    "url": "https://josh76543210-fm-four-card-feature.netlify.app/",
+    "repo": "https://github.com/josh76543210/Frontend-Mentor---Four-card-feature-section-solution",
+    "screenshot": "4-card-feature-section.png",
+    "tools": [],
+    "centeredImg": true
+  },
+  {
+    "id": 14,
+    "difficulty": 14,
+    "title": "Base Apparel Coming Soon Page",
+    "url": "https://josh76543210-fm-apparel-coming-soon.netlify.app/",
+    "repo": "https://github.com/josh76543210/Frontend-Mentor---Base-Apparel-coming-soon-page-solution",
+    "screenshot": "base-apparel-coming-soon-page.png",
+    "tools": [],
+    "centeredImg": false
+  },
+  {
+    "id": 15,
+    "difficulty": 15,
+    "title": "Intro Component With Sign-up Form",
+    "url": "https://josh76543210-fm-intro-sign-up-form.netlify.app/",
+    "repo": "https://github.com/josh76543210/Frontend-Mentor---Intro-component-with-sign-up-form-solution",
+    "screenshot": "intro-component-with-sign-up-form.png",
+    "tools": [],
+    "centeredImg": false
+  },
+  {
+    "id": 16,
+    "difficulty": 16,
+    "title": "Single Price Grid Component",
+    "url": "https://josh76543210-fm-single-price-grid.netlify.app/",
+    "repo": "https://github.com/josh76543210/Frontend-Mentor---Single-price-grid-component-solution",
+    "screenshot": "single-price-grid-component.png",
+    "tools": [],
+    "centeredImg": true
+  },
+  {
+    "id": 17,
+    "difficulty": 17,
+    "title": "Ping Coming Soon Page",
+    "url": "https://josh76543210-fm-ping-coming-soon-page.netlify.app/",
+    "repo": "https://github.com/josh76543210/Frontend-Mentor---Ping-coming-soon-page-solution",
+    "screenshot": "ping-coming-soon-page.png",
+    "tools": [],
+    "centeredImg": false
+  },
+  {
+    "id": 18,
+    "difficulty": 18,
+    "title": "Huddle Landing Page With Single Introductory Section",
+    "url": "https://josh76543210-fm-huddle-landing-page.netlify.app/",
+    "repo": "https://github.com/josh76543210/Frontend-Mentor---Huddle-landing-page-with-single-introductory-section-solution",
+    "screenshot": "huddle-landing-page-with-single-introductory-section.png",
+    "tools": [],
+    "centeredImg": false
+  },
+  {
+    "id": 19,
+    "difficulty": 19,
+    "title": "Age Calculator App",
+    "url": "https://josh76543210-fm-age-calculator-app.netlify.app/",
+    "repo": "https://github.com/josh76543210/Frontend-Mentor---Age-calculator-app-solution",
+    "screenshot": "age-calculator-app.png",
+    "tools": [],
+    "centeredImg": false
+  },
+  {
+    "id": 20,
+    "difficulty": 20,
+    "title": "News Homepage",
+    "url": "https://josh76543210-fm-news-homepage.netlify.app/",
+    "repo": "https://github.com/josh76543210/Frontend-Mentor---News-homepage-solution",
+    "screenshot": "news-homepage.png",
+    "tools": [],
+    "centeredImg": false
+  },
+  {
+    "id": 21,
+    "difficulty": 21,
+    "title": "Newsletter Sign-up Form With Success Message",
+    "url": "https://josh76543210-fm-newsletter-sign-up.netlify.app/",
+    "repo": "https://github.com/josh76543210/Frontend-Mentor---Newsletter-sign-up-form-with-success-message-solution",
+    "screenshot": "newsletter-sign-up-form-with-success-message.png",
+    "tools": [],
+    "centeredImg": true
+  },
+  {
+    "id": 22,
+    "difficulty": 22,
+    "title": "Notifications Page",
+    "url": "https://josh76543210-fm-notifications-page.netlify.app/",
+    "repo": "https://github.com/josh76543210/Frontend-Mentor---Notifications-page-solution",
+    "screenshot": "notifications-page.png",
+    "tools": [],
+    "centeredImg": false
+  },
+  {
+    "id": 23,
+    "difficulty": 23,
+    "title": "Interactive Card Details Form",
+    "url": "https://josh76543210-fm-card-details-form.netlify.app/",
+    "repo": "https://github.com/josh76543210/Frontend-Mentor---Interactive-card-details-form-solution",
+    "screenshot": "interactive-card-details-form.png",
+    "tools": [],
+    "centeredImg": true
+  },
+  {
+    "id": 24,
+    "difficulty": 24,
+    "title": "Expenses Chart Component",
+    "url": "https://josh76543210-fm-expenses-chart.netlify.app/",
+    "repo": "https://github.com/josh76543210/Frontend-Mentor---Expenses-chart-component-solution",
+    "screenshot": "expenses-chart-component.png",
+    "tools": [],
+    "centeredImg": true
+  },
+  {
+    "id": 25,
+    "difficulty": 25,
+    "title": "Intro Section with Dropdown Naviagtion",
+    "url": "https://josh76543210-fm-intro-dropdown-nav.netlify.app/",
+    "repo": "https://github.com/josh76543210/Frontend-Mentor---Intro-section-with-dropdown-navigation-solution",
+    "screenshot": "intro-section-with-dropdown-navigation.png",
+    "tools": [],
+    "centeredImg": false
+  },
+  {
+    "id": 26,
+    "difficulty": 26,
+    "title": "Advice Generator App",
+    "url": "https://josh76543210-fm-advice-generator-app.netlify.app/",
+    "repo": "https://github.com/josh76543210/Frontend-Mentor---Advice-generator-app-solution",
+    "screenshot": "advice-generator-app.png",
+    "tools": [],
+    "centeredImg": true
+  },
+  {
+    "id": 27,
+    "difficulty": 27,
+    "title": "Time Tracking Dashboard",
+    "url": "https://josh76543210-fm-vite-time-dashboard.netlify.app/",
+    "repo": "https://github.com/josh76543210/Frontend-Mentor---Time-tracking-dashboard-solution---Vite",
+    "screenshot": "time-tracking-dashboard.png",
+    "tools": ["vite"],
+    "centeredImg": true
+  },
+  {
+    "id": 28,
+    "difficulty": 28,
+    "title": "Tip Calculator",
+    "url": "https://josh76543210-fm-tip-calculator-app.netlify.app/",
+    "repo": "https://github.com/josh76543210/Frontend-Mentor---Tip-calculator-app-solution",
+    "screenshot": "tip-calculator.png",
+    "tools": ["vite"],
+    "centeredImg": true
+  },
+  {
+    "id": 29,
+    "difficulty": 29,
+    "title": "FAQ Accordion",
+    "url": "https://josh76543210-fm-faq-accordion-new.netlify.app/",
+    "repo": "https://github.com/josh76543210/Frontend-Mentor---FAQ-accordion-solution---Vite-and-TypeScript",
+    "screenshot": "faq-accordion.png",
+    "tools": ["vite", "typescript"],
+    "centeredImg": true
+  },
+  {
+    "id": 30,
+    "difficulty": 30,
+    "title": "Crowdfunding Product Page",
+    "url": "https://josh76543210-fm-crowdfunding-product.netlify.app/",
+    "repo": "https://github.com/josh76543210/Frontend-Mentor---Crowdfunding-product-page-solution---React-and-TypeScript",
+    "screenshot": "crowdfunding-product-page.png",
+    "tools": ["vite", "typescript", "tailwindcss", "react"],
+    "centeredImg": false
+  },
+  {
+    "id": 31,
+    "difficulty": 31,
+    "title": "Product List With Cart",
+    "url": "https://josh76543210-fm-product-list-cart.netlify.app/",
+    "repo": "https://github.com/josh76543210/Frontend-Mentor---Product-list-with-cart-solution---React",
+    "screenshot": "product-list-with-cart.png",
+    "tools": ["vite", "react"],
+    "centeredImg": false
+  },
+  {
+    "id": 32,
+    "difficulty": 32,
+    "title": "Mortgage Repayment Calculator",
+    "url": "https://josh76543210-fm-mortgage-calculator.netlify.app/",
+    "repo": "https://github.com/josh76543210/Frontend-Mentor---Mortgage-repayment-calculator-solution---NextJS",
+    "screenshot": "mortgage-repayment-calculator.png",
+    "tools": ["vite", "tailwindcss", "react", "nextjs"],
+    "centeredImg": true
   }
 ]

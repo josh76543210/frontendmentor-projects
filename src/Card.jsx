@@ -6,12 +6,18 @@ import styles from "./Card.module.css";
 function Card({ data }) {
   // dynamically import screenshot
   const [imgUrl, setImgUrl] = useState("");
-  import(data.screenshot).then((image) => setImgUrl(image));
+  import(`./assets/img/projects/${data.screenshot}`).then((image) =>
+    setImgUrl(image)
+  );
 
   return (
     <div className={styles.card}>
       <h2>{data.title}</h2>
-      <img src={imgUrl.default} alt="Project Screenshot" />
+      <img
+        className={data.centeredImg ? "" : styles.notCenteredImg}
+        src={imgUrl.default}
+        alt="Project Screenshot"
+      />
       <div className={styles.links}>
         <a href={data.repo} target="_blank">
           Code
