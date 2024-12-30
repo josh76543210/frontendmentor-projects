@@ -6,7 +6,7 @@ import styles from "./Card.module.css";
 function Card({ data }) {
   // dynamically import screenshot
   const [imgUrl, setImgUrl] = useState("");
-  import(`./assets/img/projects/${data.screenshot}`).then((image) =>
+  import(`../assets/img/projects/${data.screenshot}`).then((image) =>
     setImgUrl(image)
   );
 

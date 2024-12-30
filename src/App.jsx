@@ -1,5 +1,5 @@
-import SearchBar from "./SearchBar";
-import Grid from "./Grid";
+import SearchBar from "./components/SearchBar";
+import Grid from "./components/Grid";
 
 import projectsData from "./assets/data/projects.json";
 
