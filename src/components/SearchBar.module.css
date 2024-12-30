@@ -7,6 +7,33 @@
   justify-content: space-between;
 }
 
+.filtersContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.filtersDropdown {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.filtersContainer:hover .filtersDropdown {
+  display: block;
+}
+
+.filtersDropdown label {
+  display: block;
+  color: #000;
+}
+
+.filters {
+  padding: 10px;
+}
+
 @media (min-width: 40em) {
   .searchBar {
     max-width: 40rem;
