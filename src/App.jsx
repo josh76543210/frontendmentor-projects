@@ -36,6 +36,7 @@ function App() {
         searchQuery={searchQuery}
         setSearchQuery={setSearchQuery}
         setProjectOrder={setProjectOrder}
+        projectsData={projectsData}
       />
       <Grid
         projectsData={filterProjects(projectsData, searchQuery, projectOrder)}

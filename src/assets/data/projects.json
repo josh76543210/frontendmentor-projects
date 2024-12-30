@@ -266,7 +266,7 @@
     "url": "https://josh76543210-fm-vite-time-dashboard.netlify.app/",
     "repo": "https://github.com/josh76543210/Frontend-Mentor---Time-tracking-dashboard-solution---Vite",
     "screenshot": "time-tracking-dashboard.png",
-    "tools": ["vite"],
+    "tools": ["Vite"],
     "centeredImg": true
   },
   {
@@ -276,7 +276,7 @@
     "url": "https://josh76543210-fm-tip-calculator-app.netlify.app/",
     "repo": "https://github.com/josh76543210/Frontend-Mentor---Tip-calculator-app-solution",
     "screenshot": "tip-calculator.png",
-    "tools": ["vite"],
+    "tools": ["Vite"],
     "centeredImg": true
   },
   {
@@ -286,7 +286,7 @@
     "url": "https://josh76543210-fm-faq-accordion-new.netlify.app/",
     "repo": "https://github.com/josh76543210/Frontend-Mentor---FAQ-accordion-solution---Vite-and-TypeScript",
     "screenshot": "faq-accordion.png",
-    "tools": ["vite", "typescript"],
+    "tools": ["Vite", "TypeScript"],
     "centeredImg": true
   },
   {
@@ -296,7 +296,7 @@
     "url": "https://josh76543210-fm-crowdfunding-product.netlify.app/",
     "repo": "https://github.com/josh76543210/Frontend-Mentor---Crowdfunding-product-page-solution---React-and-TypeScript",
     "screenshot": "crowdfunding-product-page.png",
-    "tools": ["vite", "typescript", "tailwindcss", "react"],
+    "tools": ["Vite", "TypeScript", "TailwindCSS", "React"],
     "centeredImg": false
   },
   {
@@ -306,7 +306,7 @@
     "url": "https://josh76543210-fm-product-list-cart.netlify.app/",
     "repo": "https://github.com/josh76543210/Frontend-Mentor---Product-list-with-cart-solution---React",
     "screenshot": "product-list-with-cart.png",
-    "tools": ["vite", "react"],
+    "tools": ["Vite", "React"],
     "centeredImg": false
   },
   {
@@ -316,7 +316,7 @@
     "url": "https://josh76543210-fm-mortgage-calculator.netlify.app/",
     "repo": "https://github.com/josh76543210/Frontend-Mentor---Mortgage-repayment-calculator-solution---NextJS",
     "screenshot": "mortgage-repayment-calculator.png",
-    "tools": ["vite", "tailwindcss", "react", "nextjs"],
+    "tools": ["Vite", "TailwindCSS", "React", "NextJS"],
     "centeredImg": true
   }
 ]

@@ -43,6 +43,20 @@
   padding: 1rem;
 }
 
+.filterBtns {
+  margin-bottom: 1rem;
+}
+
+.filterBtns button:first-of-type {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.filterBtns button:last-of-type {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
 @media (min-width: 40em) {
   .searchBar {
     max-width: 40rem;

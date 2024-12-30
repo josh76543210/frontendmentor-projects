@@ -3,8 +3,19 @@ import PropTypes from "prop-types";
 import styles from "./SearchBar.module.css";
 import { useState } from "react";
 
-function SearchBar({ searchQuery, setSearchQuery, setProjectOrder }) {
+function SearchBar({
+  searchQuery,
+  setSearchQuery,
+  setProjectOrder,
+  projectsData,
+}) {
   const [displayFilters, setDisplayFilters] = useState(false);
+
+  // get filters from project data
+  const uniqueFiltersArray = [
+    ...new Set(projectsData.map((project) => project.tools).flat()),
+  ];
+
   return (
     <form className={styles.searchBar}>
       <div>
@@ -51,33 +62,32 @@ function SearchBar({ searchQuery, setSearchQuery, setProjectOrder }) {
             }}
           >
             <div className={styles.filters}>
-              <button
-                onClick={(e) => {
-                  e.preventDefault();
-                }}
-              >
-                Reset
-              </button>
-              <button
-                onClick={(e) => {
-                  e.preventDefault();
-                  setDisplayFilters(false);
-                }}
-              >
-                Close
-              </button>
-              <label>
-                <input type="checkbox" name="option1" /> Option 1
-              </label>
-              <label>
-                <input type="checkbox" name="option2" /> Option 2
-              </label>
-              <label>
-                <input type="checkbox" name="option3" /> Option 3
-              </label>
-              <label>
-                <input type="checkbox" name="option4" /> Option 4
-              </label>
+              <div className={styles.filterBtns}>
+                <button
+                  onClick={(e) => {
+                    e.preventDefault();
+                  }}
+                >
+                  Reset
+                </button>
+                <button
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setDisplayFilters(false);
+                  }}
+                >
+                  Close
+                </button>
+              </div>
+              <ul className={styles.filterList}>
+                {uniqueFiltersArray.map((filter) => (
+                  <li key={filter}>
+                    <label>
+                      <input type="checkbox" name={filter} /> {filter}
+                    </label>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>
@@ -97,6 +107,7 @@ SearchBar.propTypes = {
   searchQuery: PropTypes.string,
   setSearchQuery: PropTypes.func,
   setProjectOrder: PropTypes.func,
+  projectsData: PropTypes.array,
 };
 
 export default SearchBar;
