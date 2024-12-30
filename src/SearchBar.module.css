@@ -1,0 +1,20 @@
+.searchBar {
+  margin: 4rem auto;
+  width: 100%;
+  max-width: 20rem;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 40em) {
+  .searchBar {
+    max-width: 40rem;
+  }
+}
+
+@media (min-width: 60em) {
+  .searchBar {
+    max-width: 70rem;
+  }
+}

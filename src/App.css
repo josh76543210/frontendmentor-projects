@@ -11,33 +11,8 @@
   gap: 2rem;
 }
 
-.card-grid {
-  max-width: 20rem;
-  margin: 0 auto;
-
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
-}
-
 footer {
   padding-top: 2rem;
   margin-top: auto;
   color: #888;
-}
-
-@media (min-width: 40em) {
-  .card-grid {
-    max-width: 40rem;
-
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (min-width: 60em) {
-  .card-grid {
-    max-width: 70rem;
-
-    grid-template-columns: 1fr 1fr 1fr;
-  }
 }
