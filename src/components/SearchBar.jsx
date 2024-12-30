@@ -10,6 +10,8 @@ function SearchBar({
   setProjectOrder,
   projectTools,
   setProjectTools,
+  activeElement,
+  setActiveElement,
 }) {
   const [displayFilters, setDisplayFilters] = useState(false);
 
@@ -112,7 +114,16 @@ function SearchBar({
         <select
           name="project-order"
           id="project-order"
-          onChange={(e) => setProjectOrder(e.target.value)}
+          onChange={(e) => {
+            setProjectOrder(e.target.value);
+            e.target.blur();
+          }}
+          onClick={(e) => {
+            if (activeElement === e.target) {
+              activeElement.blur();
+              setActiveElement(null);
+            }
+          }}
         >
           <option value="new-to-old">Newest to Oldest</option>
           <option value="old-to-new">Oldest to Newest</option>
@@ -128,6 +139,8 @@ SearchBar.propTypes = {
   setProjectOrder: PropTypes.func,
   projectTools: PropTypes.array,
   setProjectTools: PropTypes.func,
+  activeElement: PropTypes.object,
+  setActiveElement: PropTypes.func,
 };
 
 export default SearchBar;
