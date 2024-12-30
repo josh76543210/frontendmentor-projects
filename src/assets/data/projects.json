@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "difficulty": 1,
+    "title": "QR Code Component",
+    "url": "https://josh76543210-fm-qr-code-component.netlify.app/",
+    "repo": "https://github.com/josh76543210/Frontend-Mentor---QR-code-component",
+    "screenshot": "./assets/img/projects/qr-code-component.png",
+    "tools": []
+  },
+  {
+    "id": 2,
+    "difficulty": 2,
+    "title": "Product Preview Card Component",
+    "url": "https://josh76543210-fm-product-component.netlify.app/",
+    "repo": "https://github.com/josh76543210/Frontend-Mentor---Product-preview-card-component",
+    "screenshot": "./assets/img/projects/product-preview-card-component.png",
+    "tools": []
+  },
+  {
+    "id": 3,
+    "difficulty": 3,
+    "title": "Test",
+    "url": "https://josh76543210-fm-product-component.netlify.app/",
+    "screenshot": "./assets/img/projects/intro-section-with-dropdown-navigation.png",
+    "tools": []
+  }
+]

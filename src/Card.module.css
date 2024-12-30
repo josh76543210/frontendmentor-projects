@@ -6,6 +6,16 @@
   flex-direction: column;
 }
 
+.card h2 {
+  padding-bottom: 1rem;
+  margin-bottom: auto;
+}
+
+.card img {
+  height: 10rem;
+  object-fit: cover;
+}
+
 .links {
   margin-top: -8px;
   display: grid;

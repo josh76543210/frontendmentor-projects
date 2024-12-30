@@ -12,7 +12,7 @@
 }
 
 .card-grid {
-  max-width: 25rem;
+  max-width: 20rem;
   margin: 0 auto;
 
   display: grid;
@@ -28,7 +28,7 @@ footer {
 
 @media (min-width: 40em) {
   .card-grid {
-    max-width: 50rem;
+    max-width: 40rem;
 
     grid-template-columns: 1fr 1fr;
   }
