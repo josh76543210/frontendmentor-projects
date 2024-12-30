@@ -7,31 +7,40 @@
   justify-content: space-between;
 }
 
-.filtersContainer {
-  position: relative;
-  display: inline-block;
+.filtersOverlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #00000077;
+  z-index: 1;
 }
 
-.filtersDropdown {
-  display: none;
+.filtersContainer {
+  display: block;
   position: absolute;
-  background-color: #f9f9f9;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
   min-width: 160px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
-.filtersContainer:hover .filtersDropdown {
+.filtersContainer label {
   display: block;
 }
 
-.filtersDropdown label {
+.showFilters {
   display: block;
-  color: #000;
 }
 
 .filters {
-  padding: 10px;
+  padding: 1rem;
 }
 
 @media (min-width: 40em) {

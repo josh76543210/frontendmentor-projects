@@ -1,8 +1,10 @@
 import PropTypes from "prop-types";
 
 import styles from "./SearchBar.module.css";
+import { useState } from "react";
 
 function SearchBar({ searchQuery, setSearchQuery, setProjectOrder }) {
+  const [displayFilters, setDisplayFilters] = useState(false);
   return (
     <form className={styles.searchBar}>
       <div>
@@ -14,14 +16,56 @@ function SearchBar({ searchQuery, setSearchQuery, setProjectOrder }) {
             setSearchQuery(e.target.value.trimStart().replace("  ", " "))
           }
         />
-        <button onClick={() => setSearchQuery("")}>Clear</button>
+        <button
+          onClick={(e) => {
+            e.preventDefault();
+            setSearchQuery("");
+          }}
+        >
+          Clear
+        </button>
       </div>
       <div>
-        <div className={styles.filtersContainer}>
-          <button className={styles.filtersBtn}>Filters</button>
-          <div className={styles.filtersDropdown}>
+        <button
+          className={styles.filtersBtn}
+          onClick={(e) => {
+            e.preventDefault();
+            setDisplayFilters(true);
+          }}
+        >
+          Filters
+        </button>
+        <div
+          className={`${styles.filtersOverlay} ${
+            displayFilters ? styles.showFilters : ""
+          }`}
+          onClick={(e) => {
+            e.preventDefault();
+            setDisplayFilters(false);
+          }}
+        >
+          <div
+            className={styles.filtersContainer}
+            onClick={(e) => {
+              e.stopPropagation();
+            }}
+          >
             <div className={styles.filters}>
-              <button>Reset</button>
+              <button
+                onClick={(e) => {
+                  e.preventDefault();
+                }}
+              >
+                Reset
+              </button>
+              <button
+                onClick={(e) => {
+                  e.preventDefault();
+                  setDisplayFilters(false);
+                }}
+              >
+                Close
+              </button>
               <label>
                 <input type="checkbox" name="option1" /> Option 1
               </label>
