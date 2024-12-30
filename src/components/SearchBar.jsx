@@ -4,10 +4,12 @@ import styles from "./SearchBar.module.css";
 import { useState } from "react";
 
 function SearchBar({
+  projectsData,
   searchQuery,
   setSearchQuery,
   setProjectOrder,
-  projectsData,
+  projectTools,
+  setProjectTools,
 }) {
   const [displayFilters, setDisplayFilters] = useState(false);
 
@@ -66,6 +68,7 @@ function SearchBar({
                 <button
                   onClick={(e) => {
                     e.preventDefault();
+                    setProjectTools([]);
                   }}
                 >
                   Reset
@@ -83,7 +86,22 @@ function SearchBar({
                 {uniqueFiltersArray.map((filter) => (
                   <li key={filter}>
                     <label>
-                      <input type="checkbox" name={filter} /> {filter}
+                      <input
+                        type="checkbox"
+                        name={filter}
+                        checked={projectTools.includes(filter)}
+                        onChange={(e) => {
+                          // add item if it is checked
+                          if (e.target.checked)
+                            setProjectTools((cur) => [...cur, e.target.name]);
+                          // remove if not
+                          else
+                            setProjectTools((cur) =>
+                              cur.filter((tool) => tool !== e.target.name)
+                            );
+                        }}
+                      />
+                      {filter}
                     </label>
                   </li>
                 ))}
@@ -104,10 +122,12 @@ function SearchBar({
   );
 }
 SearchBar.propTypes = {
+  projectsData: PropTypes.array,
   searchQuery: PropTypes.string,
   setSearchQuery: PropTypes.func,
   setProjectOrder: PropTypes.func,
-  projectsData: PropTypes.array,
+  projectTools: PropTypes.array,
+  setProjectTools: PropTypes.func,
 };
 
 export default SearchBar;

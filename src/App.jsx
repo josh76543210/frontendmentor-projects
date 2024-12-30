@@ -26,17 +26,20 @@ function filterProjects(projectsData, searchQuery, projectOrder) {
 
 function App() {
   const [searchQuery, setSearchQuery] = useState("");
-  const [projectTools, setprojectTools] = useState([]);
+  const [projectTools, setProjectTools] = useState([]);
   const [projectOrder, setProjectOrder] = useState("new-to-old");
 
   return (
     <>
       <h1>My Frontend Mentor Projects</h1>
+      <p>{projectTools}</p>
       <SearchBar
+        projectsData={projectsData}
         searchQuery={searchQuery}
         setSearchQuery={setSearchQuery}
         setProjectOrder={setProjectOrder}
-        projectsData={projectsData}
+        projectTools={projectTools}
+        setProjectTools={setProjectTools}
       />
       <Grid
         projectsData={filterProjects(projectsData, searchQuery, projectOrder)}
