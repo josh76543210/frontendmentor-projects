@@ -46,7 +46,7 @@ function SearchBar({
             setDisplayFilters(true);
           }}
         >
-          Filters
+          Filter {projectTools.length > 0 ? `(${projectTools.length})` : ""}
         </button>
         <div
           className={`${styles.filtersOverlay} ${

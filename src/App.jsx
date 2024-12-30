@@ -7,7 +7,7 @@ import projectsData from "./assets/data/projects.json";
 
 import "./App.css";
 
-function filterProjects(projectsData, searchQuery, projectOrder) {
+function filterProjects(projectsData, searchQuery, projectOrder, projectTools) {
   // project order
   if (projectOrder === "new-to-old")
     projectsData = projectsData.sort((a, b) => b.id - a.id);
@@ -15,6 +15,11 @@ function filterProjects(projectsData, searchQuery, projectOrder) {
     projectsData = projectsData.sort((a, b) => a.id - b.id);
 
   // filter based on tools
+  if (projectTools.length !== 0) {
+    projectsData = projectsData.filter((project) =>
+      projectTools.some((tool) => project.tools.includes(tool))
+    );
+  }
 
   // filter based on search term
   if (searchQuery == "") return projectsData;
@@ -32,7 +37,6 @@ function App() {
   return (
     <>
       <h1>My Frontend Mentor Projects</h1>
-      <p>{projectTools}</p>
       <SearchBar
         projectsData={projectsData}
         searchQuery={searchQuery}
@@ -42,7 +46,12 @@ function App() {
         setProjectTools={setProjectTools}
       />
       <Grid
-        projectsData={filterProjects(projectsData, searchQuery, projectOrder)}
+        projectsData={filterProjects(
+          projectsData,
+          searchQuery,
+          projectOrder,
+          projectTools
+        )}
       />
       <footer>
         <p>Coded by Josh</p>
