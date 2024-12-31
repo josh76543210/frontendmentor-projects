@@ -89,7 +89,6 @@ select:focus {
     calc(100% - 2.5em) 0.5em;
   background-size: 5px 5px, 5px 5px, 1px 1.5em;
   background-repeat: no-repeat;
-  /* outline: 0; */
 }
 
 a:hover,
@@ -104,7 +103,9 @@ a:focus-visible,
 button:focus-visible,
 input:focus-visible,
 select:focus-visible {
-  outline: 1px solid var(--primary);
+  /* outline: 1px solid var(--primary); */
+  outline: 0;
+  border-color: var(--primary);
 }
 
 @media (prefers-color-scheme: light) {

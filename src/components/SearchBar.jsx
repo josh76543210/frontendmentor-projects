@@ -21,8 +21,8 @@ function SearchBar({
   ];
 
   return (
-    <form className={styles.searchBar}>
-      <div>
+    <form className={styles.form}>
+      <div className={styles.search}>
         <input
           type="text"
           placeholder="Search projects..."
@@ -40,7 +40,7 @@ function SearchBar({
           Clear
         </button>
       </div>
-      <div>
+      <div className={styles.filterAndSorting}>
         <button
           className={styles.filtersBtn}
           onClick={(e) => {
