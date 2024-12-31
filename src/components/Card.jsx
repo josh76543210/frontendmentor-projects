@@ -1,21 +1,14 @@
 import PropTypes from "prop-types";
-import { useState } from "react";
 
 import styles from "./Card.module.css";
 
 function Card({ data }) {
-  // dynamically import screenshot
-  const [imgUrl, setImgUrl] = useState("");
-  import(`../assets/img/projects/${data.screenshot}`).then((image) =>
-    setImgUrl(image)
-  );
-
   return (
     <div className={styles.card}>
       <h2>{data.title}</h2>
       <img
         className={data.centeredImg ? "" : styles.notCenteredImg}
-        src={imgUrl.default}
+        src={`/screenshots/${data.screenshot}`}
         alt="Project Screenshot"
       />
       <div className={styles.links}>
