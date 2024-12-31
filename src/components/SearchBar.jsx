@@ -47,6 +47,8 @@ function SearchBar({
             e.preventDefault();
             setDisplayFilters(true);
           }}
+          aria-expanded={displayFilters}
+          aria-controls="filter-menu"
         >
           Filter {projectTools.length > 0 ? `(${projectTools.length})` : ""}
         </button>
@@ -60,6 +62,8 @@ function SearchBar({
           }}
         >
           <div
+            id="filter-menu"
+            aria-hidden={!displayFilters}
             className={`${styles.filtersContainer} ${
               displayFilters ? styles.showFilters : ""
             }`}
