@@ -52,7 +52,7 @@ function SearchBar({
         </button>
         <div
           className={`${styles.filtersOverlay} ${
-            displayFilters ? styles.showFilters : ""
+            displayFilters ? styles.showOverlay : ""
           }`}
           onClick={(e) => {
             e.preventDefault();
@@ -60,7 +60,9 @@ function SearchBar({
           }}
         >
           <div
-            className={styles.filtersContainer}
+            className={`${styles.filtersContainer} ${
+              displayFilters ? styles.showFilters : ""
+            }`}
             onClick={(e) => {
               e.stopPropagation();
             }}

@@ -108,6 +108,54 @@ select:focus-visible {
   border-color: var(--primary);
 }
 
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+
+  margin: 0;
+  padding: 0;
+  width: 25px;
+  height: 25px;
+  background-color: var(--bg-color);
+  color: var(--txt-color);
+  font: inherit;
+  border: 2px solid var(--txt-color);
+  border-radius: 4px;
+  position: relative;
+
+  display: inline-block;
+}
+
+input[type="checkbox"]:focus-visible {
+  border: 2px solid var(--primary);
+}
+
+input[type="checkbox"]:checked {
+  background-color: var(--primary);
+}
+
+input[type="checkbox"] {
+  position: relative;
+}
+
+input[type="checkbox"]:after {
+  content: "";
+  width: 5px;
+  height: 10px;
+  border: solid var(--txt-color);
+  border-width: 0 3px 3px 0;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+
+  display: none;
+}
+
+input[type="checkbox"]:checked:after {
+  display: block;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     --txt-color: #213547;
