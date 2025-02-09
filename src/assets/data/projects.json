@@ -318,5 +318,15 @@
     "screenshot": "mortgage-repayment-calculator.webp",
     "tools": ["Vite", "TailwindCSS", "React", "NextJS"],
     "centeredImg": true
+  },
+  {
+    "id": 33,
+    "difficulty": 33,
+    "title": "Social Links Profile",
+    "url": "https://josh76543210-fm-social-links-profile.netlify.app/",
+    "repo": "https://github.com/josh76543210/Frontend-Mentor---Social-links-profile-solution---React",
+    "screenshot": "social-links-profile.webp",
+    "tools": ["Vite", "React"],
+    "centeredImg": true
   }
 ]
