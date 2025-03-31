@@ -76,7 +76,7 @@ function App() {
         )}
       />
       <footer>
-        <p>Coded by Josh</p>
+        <p>Coded by Josh 🚀</p>
       </footer>
     </>
   );
